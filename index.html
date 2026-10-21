@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pip's Primer: an adaptive reading, writing and math tutor for ages 4-8</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><h1>🦉 Pip's Primer</h1>
+<nav><button id="nav-learn" class="tab active">Learn</button><button id="nav-parent" class="tab">Grown-ups</button></nav></header>
+<main>
+<section id="learn">
+  <div id="profile-bar"><span id="kid-name">Friend</span> · ⭐ <span id="stars">0</span> stars · <span id="streak"></span></div>
+  <div id="card">
+    <div id="skill-tag"></div>
+    <div id="prompt"></div>
+    <button id="speak" class="small" aria-label="Hear it again">🔊 Hear it</button>
+    <div id="stage"></div>
+    <div id="choices"></div>
+    <div id="feedback" aria-live="polite"></div>
+    <button id="next" class="big hidden">Next ➜</button>
+  </div>
+</section>
+<section id="parent" class="hidden">
+  <h2>Grown-ups' dashboard</h2>
+  <p>Each skill is tracked with Bayesian Knowledge Tracing (estimated chance your child has learned the current level) plus spaced-repetition review of individual items. Everything is saved only in this browser.</p>
+  <label>Child's name <input id="name-input" maxlength="20"></label>
+  <label><input type="checkbox" id="voice-toggle" checked> Read prompts aloud</label>
+  <label><input type="checkbox" id="mic-toggle"> Let my child read aloud with the microphone (where supported)</label>
+  <div id="dash"></div>
+  <p><button id="export" class="small">Download progress (JSON)</button> <button id="reset" class="small danger">Reset all progress</button></p>
+</section>
+</main>
+<footer>Built by Satoshi Drops 🪂 <a href="https://x.com/SatoshiDropsHQ" target="_blank" rel="noopener">@SatoshiDropsHQ</a></footer>
+<script src="js/content.js"></script><script src="js/mastery.js"></script><script src="js/app.js"></script>
+</body></html>
